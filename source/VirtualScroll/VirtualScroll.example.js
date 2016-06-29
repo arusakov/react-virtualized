@@ -35,6 +35,10 @@ export default class VirtualScrollExample extends Component {
     this._rowRenderer = this._rowRenderer.bind(this)
   }
 
+  componentDidUpdate() {
+    console.log(this.refs);
+  }
+
   render () {
     const {
       overscanRowCount,
